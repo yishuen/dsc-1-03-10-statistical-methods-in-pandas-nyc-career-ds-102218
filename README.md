@@ -10,7 +10,7 @@ In this lesson you'll learn how to use some of the key summary statistics method
 You will be able to:
 
 * Understand and use the `df.describe()` and `df.info()` summary statistics methods
-* Use built-in Pandas methods for calculating summary statistics (`.mean()`, `.std()`, `.count()`, `.sum()`, `.mean()`, `.median()`, `.std()`, `.var()` and `.quantile()`)
+* Use built-in Pandas methods for calculating summary statistics (`.mean()`, `.std()`, `.count()`, `.sum()`, `.mode()`, `.median()`, `.std()`, `.var()` and `.quantile()`)
 * Apply a function to every element in a Series or DataFrame using `s.apply()` and `df.applymap()`
 
 
@@ -47,7 +47,7 @@ df.info()
     Embarked       889 non-null object
     dtypes: float64(2), int64(5), object(6)
     memory usage: 90.6+ KB
-    
+
 
 As we can see from the output above, the `.info()` method provides us with great information about the characteristics of the DataFrame, without telling us anything about the data it actually contains. 
 
@@ -345,7 +345,7 @@ string_df.info()
     Embarked       891 non-null object
     dtypes: object(13)
     memory usage: 90.6+ KB
-    
+
 
 
 ```python
